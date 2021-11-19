@@ -26,27 +26,61 @@ body {
     display: flex;
     flex-direction: column;
     border: 1px solid teal;
+
    
 }
 
 .user-products {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     border: 1px solid blue;
-    max-width: 80%;
-    margin: auto;
+    max-width: 95%;
+    margin: 50px auto;
+    text-align: center;
+    padding: 15px;
+    color: var(--VeryDarkMagenta);
 }
+
 
 .user-products-start p {
+    border: 1px solid pink;
     font-size: 0.9rem;
+    margin-top: 20px;
+    color: var(--DarkGrayishMagenta);
+    font-size: 0.85rem;
+    line-height: 1.5;
+  
 }
 
+.ratings {
+    margin-top: 30px;
+    width: 90%;
+    color: var(--VeryDarkMagenta);
+}
+
+.icon {
+    margin-bottom: 10px;
+}
+
+.review-rating {
+    background-color: var(--LightGrayishMagenta);
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-radius: 10px;
+    
+  
+   
+}
 .buyer-reviews-container {
     display: flex;
-    max-width: 80%;
-    border: 2px solid red;
-    margin: 50px auto;
+    flex-direction: column;
+    max-width: 95%;
+    margin: auto;
+    border: 1px solid black;
+   
 }
 
 .buyer-colton,
@@ -54,20 +88,94 @@ body {
 .buyer-anne {
     background-color: var(--VeryDarkMagenta);
     border-radius: 10px;
-    
     margin: 10px;
-    padding: 10px;
+    padding: 20px 30px;
+}
+
+/* BUYER COLTON SECTION */
+
+.buyer-colton {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .buyer-colton-start {
     display: flex;
+}
+
+.buyer-colton-end {
+    margin-left: 20px;
+    padding-top: 5px;
+}
+.colton-img {
+    border-radius: 50px;
+    width: 40px;
+}
+
+.colton-p {
+    color: var(--White);
+    font-weight: 700;
+    font-size: 0.8rem;
+
+}
+
+.colton-p-verified {
+    color: var(--SoftPink);
+    font-size: 0.8rem;
+    padding-top: 5px;
+}
+
+.colton-review {
+    color: var(--White);
+    font-size: 0.8rem;
+    line-height: 25px;
+    padding: 15px ;
+    margin-top: 10px;
+}
+
+/* BUYER IRENE SECTION */
+
+.buyer-irene {
+    display: flex;
     flex-direction: column;
-    border: 1px solid red;
 }
 
 .buyer-irene-start {
     display: flex;
 }
+
+.buyer-irene-end {
+    margin-left: 20px;
+    padding-top: 5px;
+}
+
+.irene-img {
+    border-radius: 50px;
+    width: 40px;
+}
+
+.irene-p {
+    color: var(--White);
+    font-weight: 700;
+    font-size: 0.8rem;
+
+}
+
+.irene-p-verified {
+    color: var(--SoftPink);
+    font-size: 0.8rem;
+    padding-top: 5px;
+}
+
+.irene-review {
+    color: var(--White);
+    font-size: 0.8rem;
+    line-height: 25px;
+    padding: 15px ;
+    margin-top: 10px;
+}
+
 
 .attribution {
     font-size: 11px;
