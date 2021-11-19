@@ -94,39 +94,53 @@ body {
 
 /* BUYER COLTON SECTION */
 
-.buyer-colton {
+.buyer-colton,
+.buyer-irene,
+.buyer-anne {
     display: flex;
     flex-direction: column;
     
 }
 
-.buyer-colton-start {
+.buyer-colton-start,
+.buyer-irene-start,
+.buyer-anne-start {
     display: flex;
 }
 
-.buyer-colton-end {
+.buyer-colton-end,
+.buyer-irene-end,
+.buyer-anne-end {
     margin-left: 20px;
     padding-top: 5px;
 }
-.colton-img {
+.colton-img,
+.irene-img,
+.anne-img {
     border-radius: 50px;
     width: 40px;
 }
 
-.colton-p {
+.colton-p,
+.irene-p,
+.anne-p {
     color: var(--White);
     font-weight: 700;
     font-size: 0.8rem;
 
 }
 
-.colton-p-verified {
+.colton-p-verified,
+.irene-p-verified,
+.anne-p-verified {
     color: var(--SoftPink);
     font-size: 0.8rem;
     padding-top: 5px;
 }
 
-.colton-review {
+.colton-review,
+.irene-review,
+.anne-review {
     color: var(--White);
     font-size: 0.8rem;
     line-height: 25px;
@@ -134,48 +148,9 @@ body {
     margin-top: 10px;
 }
 
-/* BUYER IRENE SECTION */
 
-.buyer-irene {
-    display: flex;
-    flex-direction: column;
-}
 
-.buyer-irene-start {
-    display: flex;
-}
-
-.buyer-irene-end {
-    margin-left: 20px;
-    padding-top: 5px;
-}
-
-.irene-img {
-    border-radius: 50px;
-    width: 40px;
-}
-
-.irene-p {
-    color: var(--White);
-    font-weight: 700;
-    font-size: 0.8rem;
-
-}
-
-.irene-p-verified {
-    color: var(--SoftPink);
-    font-size: 0.8rem;
-    padding-top: 5px;
-}
-
-.irene-review {
-    color: var(--White);
-    font-size: 0.8rem;
-    line-height: 25px;
-    padding: 15px ;
-    margin-top: 10px;
-}
-
+/* ATTRIBUTION */
 
 .attribution {
     font-size: 11px;
