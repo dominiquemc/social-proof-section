@@ -154,21 +154,58 @@ body {
     color: hsl(228, 45%, 44%);
   }
 
+
+  /* DESKTOP MEDIA QUERY */
+
   @media (min-width: 800px) {
+      .body {
+          height: 100%;
+      }
       .container {
           display: flex;
-          flex-direction: row;
-          background-color: pink;
+          border: 3px solid red;
+         
       }
 
       .ratings {
           display: flex;
           flex-direction: column;
-          border: 1px solid red;
+          
+      
       }
+
+    .review-rating {
+        display: flex;
+        
+    }
+
       .buyer-reviews-container {
           display: flex;
           flex-direction: row; 
           border: 1px solid black;
+          flex: 1;
       }
+
+      .user-products {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid blue;
+        
+      }
+
+      .user-products-start {
+          border: 1px solid red;
+      }
+
+      .user-products-start h1 {
+          font-size: 2.8rem;
+          
+          
+      }
+
+      .user-products-start p {
+         
+          
+      }
+
   }
