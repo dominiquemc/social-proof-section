@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
 
 :root {
---VeryDarkMagenta: hsl(300, 43%, 22%);
---SoftPink: hsl(333, 80%, 67%);
---DarkGrayishMagenta: hsl(303, 10%, 53%);
---LightGrayishMagenta: hsl(300, 24%, 96%);
---White: hsl(0, 0%, 100%);
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink: hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
 }
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    
+
 }
 
 body {
@@ -45,7 +45,7 @@ body {
     color: var(--DarkGrayishMagenta);
     font-size: 0.85rem;
     line-height: 1.5;
-  
+
 }
 
 .ratings {
@@ -67,7 +67,7 @@ body {
     font-size: 0.8rem;
     font-weight: 700;
     border-radius: 10px;
-    
+
 }
 
 /* BUYERS SECTION */
@@ -77,7 +77,7 @@ body {
     flex-direction: column;
     max-width: 95%;
     margin: auto;
-   
+
 }
 
 .buyer-colton,
@@ -95,7 +95,7 @@ body {
 .buyer-anne {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .buyer-colton-start,
@@ -110,6 +110,7 @@ body {
     margin-left: 20px;
     padding-top: 5px;
 }
+
 .colton-img,
 .irene-img,
 .anne-img {
@@ -140,7 +141,7 @@ body {
     color: var(--White);
     font-size: 0.8rem;
     line-height: 25px;
-    padding: 15px ;
+    padding: 15px;
     margin-top: 10px;
 }
 
@@ -150,41 +151,38 @@ body {
     font-size: 11px;
     text-align: center;
     margin-top: 15px;
-  }
+}
 
-  .attribution a {
+.attribution a {
     color: hsl(228, 45%, 44%);
-  }
+}
 
 
-  /* DESKTOP MEDIA QUERY */
+/* DESKTOP MEDIA QUERY */
 
-  @media (min-width: 800px) {
-      .container {
-          display: flex;
-          border: 3px solid red;
-          height: 100vh;
-         
-      }
+@media (min-width: 894px) {
+    .container {
+        display: flex;
+  
+    }
 
-      .ratings {
-          display: flex;
-          flex-direction: column;
-          width: 40%;
-          margin-right: 150px;
-      }
+    .ratings {
+        display: flex;
+        flex-direction: column;
+        max-width: 450px;
+    }
 
     .review-rating {
-       display: flex;
-       border-radius: 5px;
-       width: 80%;
-       padding: 15px;
+        display: flex;
+        border-radius: 5px;
+        width: 400px;
+        padding: 15px;
     }
 
     .review-rating p {
-        margin-left: 30px;
         padding: 5px;
     }
+
     .review-rating2 {
         align-self: center;
     }
@@ -193,37 +191,106 @@ body {
         align-self: flex-end;
     }
 
-      .buyer-reviews-container {
-          display: flex;
-          flex-direction: row; 
-      }
-
-      .user-products {
+    .buyer-reviews-container {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        height: 40vh;
-        width: 100vw;
+        width: 80%;
+    }
+
+    .buyer-irene {
+        margin-top: 30px;
+    }
+    
+    .buyer-anne {
+        margin-top: 60px;
+    }
+    
+    .user-products {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .user-products-start {
+        padding: 10px;
+        text-align: start;
+        width: 30vw
        
-        
-        
-      }
+    }
 
-      .user-products-start {
-          padding: 10px;
-          text-align: start;
-          width: 30vw;
-      }
+    .user-products-start h1 {
+        font-size: 3rem;
 
-      .user-products-start h1 {
-          font-size: 3rem;
-          
-          
-      }
+    }
 
-      .user-products-start p {
-         
-          
-      }
+}
 
-  }
+@media (min-width: 2560px) {
+    .container {
+        display: flex;
+        height: 70%;
+        margin-top: 20px;
+    }
+
+    .ratings {
+        display: flex;
+        flex-direction: column;
+        max-width: 40%;
+    }
+
+    .review-rating {
+        width: 90%;
+    }
+
+
+    .buyer-reviews-container {
+        display: flex;
+        margin-top: 30px;
+        height: 40%;
+    }
+
+    .user-products {
+        height: 40%;
+    }
+
+    .user-products-start h1 {
+        font-size: 4rem;
+    }
+
+    .user-products-start p {
+        font-size: 1.5rem;
+    }
+
+    .colton-img,
+    .irene-img,
+    .anne-img {
+        border-radius: 50px;
+        width: 70px;
+    }
+
+
+
+    .colton-p,
+    .irene-p,
+    .anne-p {
+        font-size: 1rem;
+    }
+
+    .colton-p-verified,
+    .irene-p-verified,
+    .anne-p-verified {
+        font-size: 1rem;
+        padding-top: 5px;
+    }
+
+    .colton-review,
+    .irene-review,
+    .anne-review {
+        font-size: 1rem;
+        line-height: 35px;
+    }
+    .attribution {
+        margin-bottom: 50px;
+    }
+}
