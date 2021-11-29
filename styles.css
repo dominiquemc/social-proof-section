@@ -15,6 +15,8 @@
 
 }
 
+/* Mobile first */
+
 body {
     background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
     background-repeat: no-repeat;
